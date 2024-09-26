@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de Geografia</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-666">
+            <h2>Nível Fácil</h2>
+            <img src="Cenario-passo0.png" alt="">
+            <p><strong>Inicie o Gênio Quiz de Geografia!</strong></p>
+            <button class="btn-resposta" data-correta="true">começar</button>
+        </div>
+
+        <!-- Nível Fácil -->
+        <div class="passo" id="passo-0">
+            <h2>Nível Fácil</h2>
+            <p><strong>1. Qual é a capital do Brasil?</strong></p>
+            <button class="btn-resposta" data-correta="true">Brasília</button>
+            <button class="btn-resposta" data-correta="false">Rio de Janeiro</button>
+            <button class="btn-resposta" data-correta="false">São Paulo</button>
+        </div>
+
+        <div class="passo" id="passo-1" style="display: none;">
+            <p><strong>2. Qual é o maior continente do mundo?</strong></p>
+            <button class="btn-resposta" data-correta="false">África</button>
+            <button class="btn-resposta" data-correta="true">Ásia</button>
+            <button class="btn-resposta" data-correta="false">América</button>
+        </div>
+
+        <div class="passo" id="passo-2" style="display: none;">
+            <p><strong>3. Qual é o rio mais longo do mundo?</strong></p>
+            <button class="btn-resposta" data-correta="false">Amazonas</button>
+            <button class="btn-resposta" data-correta="true">Nilo</button>
+            <button class="btn-resposta" data-correta="false">Yangtze</button>
+        </div>
+
+        <!-- Nível Médio -->
+        <div class="passo" id="passo-3" style="display: none;">
+            <h2>Nível Médio</h2>
+            <p><strong>4. Qual é o maior estado do Brasil em extensão territorial?</strong></p>
+            <button class="btn-resposta" data-correta="true">Amazonas</button>
+            <button class="btn-resposta" data-correta="false">Bahia</button>
+            <button class="btn-resposta" data-correta="false">São Paulo</button>
+        </div>
+
+        <div class="passo" id="passo-4" style="display: none;">
+            <p><strong>5. Qual país tem a maior população do mundo?</strong></p>
+            <button class="btn-resposta" data-correta="false">Índia</button>
+            <button class="btn-resposta" data-correta="false">Estados Unidos</button>
+            <button class="btn-resposta" data-correta="true">China</button>
+        </div>
+
+        <div class="passo" id="passo-5" style="display: none;">
+            <p><strong>6. Qual é a capital da Austrália?</strong></p>
+            <button class="btn-resposta" data-correta="false">Sydney</button>
+            <button class="btn-resposta" data-correta="true">Canberra</button>
+            <button class="btn-resposta" data-correta="false">Melbourne</button>
+        </div>
+
+        <!-- Nível Difícil -->
+        <div class="passo" id="passo-6" style="display: none;">
+            <h2>Nível Difícil</h2>
+            <p><strong>7. Qual é a capital do Quênia?</strong></p>
+            <button class="btn-resposta" data-correta="true">Nairobi</button>
+            <button class="btn-resposta" data-correta="false">Cairo</button>
+            <button class="btn-resposta" data-correta="false">Addis Abeba</button>
+        </div>
+
+        <div class="passo" id="passo-7" style="display: none;">
+            <p><strong>8. Qual país é conhecido como a "Terra do Sol Nascente"?</strong></p>
+            <button class="btn-resposta" data-correta="false">China</button>
+            <button class="btn-resposta" data-correta="true">Japão</button>
+            <button class="btn-resposta" data-correta="false">Coreia do Sul</button>
+        </div>
+
+        <div class="passo" id="passo-8" style="display: none;">
+            <p><strong>9. Qual é a montanha mais alta do mundo?</strong></p>
+            <button class="btn-resposta" data-correta="false">K2</button>
+            <button class="btn-resposta" data-correta="true">Monte Everest</button>
+            <button class="btn-resposta" data-correta="false">Monte Kilimanjaro</button>
+        </div>
+        
+        <!-- Pergunta de vitória -->
+        <div class="passo" id="passo-9" style="display: none;">
+            <img src="Cenario-passo2.png" alt="">
+            <h2>Parabéns!</h2>
+            <p><strong>Você acertou todas as perguntas!</strong></p>
+            <p>Você é um verdadeiro gênio da geografia!</p>
+        </div>
+
+        <div class="resultado" id="resultado" style="display: none;">
+            <img src="Cenario-passo1.png" alt="">
+            <h2>Você errou! Tente novamente.</h2>
+        </div>
+        <button id="reiniciar" style="display: none;">Voltar ao início</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
